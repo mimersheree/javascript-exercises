@@ -29,7 +29,9 @@ describe('repeatString', () => {
     /*The .match(/((hey))/g).length is a regex that will count the number of heys
     in the result, which if your function works correctly will equal the number that
     was randomly generated. */
-    expect(repeatString('odin', number).match(/((odin))/g).length).toEqual(number);
+    expect(repeatString('odin', number).match(/((odin))/g).length).toEqual(
+      number
+    );
   });
   test('works with blank strings', () => {
     expect(repeatString('', 10)).toEqual('');
